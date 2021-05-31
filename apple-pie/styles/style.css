@@ -1,0 +1,76 @@
+body, html {
+    font-family:'Roboto', sans-serif;
+    color: rgb(143, 138, 138);
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero-image {
+    background-image: url("file:///C:/Users/grazi/Projetos/Ironhack/Lab/lab-css-recipes-clone/apple-pie/images/apple-pie.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+    height: 500px;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.header-text-adjust{
+    margin: 50px;
+    text-align: justify;
+}
+
+.header-text-adjust img {
+    height: 50px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-text-adjust {
+    margin: 50px;
+    text-align: left;
+}
+.main-text-adjust img {
+    height: 70px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-bold {
+    font-weight: bold;
+}
+
+ul { 
+    list-style-type: none;
+}
+ul li { 
+    display: block; 
+}
+
+ul li:before { 
+    content: "- "; 
+}
+
+ol { 
+    counter-reset: item;
+    list-style-type: none;
+}
+ol li { 
+    display: block; 
+}
+
+ol li:before { 
+    content: counter(item) ") "; 
+    counter-increment: item;
+}
